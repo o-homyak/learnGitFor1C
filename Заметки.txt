@@ -1,0 +1,16 @@
+Теперь для генерации обработки проверки фичи не нужен Python, достаточно Oscript и Precommit1С с копированием файла
+
+\precommit1c\tools\v8unpack.exe
+
+в
+
+\OneScript\bin\v8unpack.exe
+
+
+Теперь, подсказать git как работать с кириллическими наименованиями можно глобально, т.е. для всех репозиториев:
+
+git config --global core.quotepath false
+
+а не для каждого репозитория, как было ранее:
+
+git config --local core.quotepath false
